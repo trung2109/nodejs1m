@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Name</title>
+</head>
+<body>
+    <p id = "res"></p>
+    <script>
+        const student = [
+            {
+                name: "Nguyen Van A",
+                sex: "female"
+            },
+            {
+                name: "Nguyen Van B",
+                sex: "female"
+            },
+            {
+                name: "Nguyen Van C",
+                sex: "male"
+            }
+        ];
+        const checknu = (x) => x.sex == "female";
+        if (student.every(checknu)){
+            document.getElementById("res").innerHTML="có";
+        } else{
+            document.getElementById("res").innerHTML="không";
+        }
+    </script>
+</body>
+</html>

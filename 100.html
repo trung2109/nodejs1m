@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+
+<head>
+
+    <meta charset=”UTF-8″>
+
+    <meta http-equiv=”X-UA-Compatible” content=”IE=edge”>
+
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+
+    <title>Code Gym</title>
+
+</head>
+
+<body>
+<p id = "array"></p>
+<p id = "p"></p>
+    <script>
+        const array = [99,88,22];
+        document.getElementById("array").innerHTML = array;
+        const more = (x) => x > 100;
+        if (array.some(more)){
+            document.getElementById("p").innerHTML = "yes";
+        } else {
+            document.getElementById("p").innerHTML = "no";
+        }
+    </script>
+
+</body>
+
+</html>
